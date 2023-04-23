@@ -3,8 +3,11 @@ const express = require("express");
 const Moralis = require("moralis").default;
 // Import the EvmChain dataType
 const { EvmChain } = require("@moralisweb3/common-evm-utils");
+const cors = require("cors");
 
 const app = express();
+app.use(cors());
+
 const port = 5000;
 
 Moralis.start({
