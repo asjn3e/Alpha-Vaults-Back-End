@@ -6,9 +6,7 @@ const { EvmChain } = require("@moralisweb3/common-evm-utils");
 
 const app = express();
 const port = 5000;
-const cors = require("cors");
 
-app.use(cors());
 Moralis.start({
   apiKey: "f3pTmwFHKJJ00wZfvNSQfQGwQM9c6kFA1CZiISy3IQBRC5HbfMNvEpA1ADwYM0oM",
 });
